@@ -98,3 +98,45 @@ Ingresa un texto: salir
 ```El script utiliza el pipeline de transformers de Hugging Face para realizar el análisis de sentimientos.
 El modelo devuelve una etiqueta (POSITIVE o NEGATIVE) junto con un valor de confianza, que indica la certeza del modelo sobre la clasificación.
 El usuario puede ingresar varios textos y obtener análisis para cada uno.```
+
+           +----------------------------+
+           |   Inicio del Programa      |
+           +----------------------------+
+                      |
+                      v
+           +----------------------------+
+           |   El usuario ingresa texto |
+           +----------------------------+
+                      |
+                      v
+           +----------------------------+
+           |   El texto es analizado    |
+           |    por la API de           |
+           |    Sentimientos (simulado) |
+           +----------------------------+
+                      |
+                      v
+           +----------------------------+
+           |    Resultado analizado     |
+           |   (Sentimiento + Confianza)|
+           +----------------------------+
+                      |
+                      v
+           +----------------------------+
+           |    Muestra el resultado    |
+           |   en la interfaz           |
+           +----------------------------+
+                      |
+                      v
+           +----------------------------+
+           |   ¿Usuario escribe 'salir'?|
+           +----------------------------+
+                      |
+           +----------+-----------+
+           |                      |
+           v                      v
+   +------------------+    +----------------------------+
+   |  Fin del Programa|    | Continúa esperando nuevo  |
+   |  (mensaje final) |    | texto                      |
+   +------------------+    +----------------------------+
+
